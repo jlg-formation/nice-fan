@@ -2,6 +2,7 @@
   "name": "exo",
   "version": "0.0.1",
   "description": "orsys angular formation",
+  "repository": "https://github.com/jlguenego/nice-fan",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
