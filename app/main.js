@@ -1,5 +1,5 @@
 'use strict';
-require('./style.css');
+require('./style.scss');
 require('angular');
 require('./ors-star/ors-star.js');
 require('./ors-route/ors-route.js');

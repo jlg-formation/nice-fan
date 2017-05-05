@@ -1,0 +1,23 @@
+$headerColor: hsla(240, 100%, 90%, 1);
+$activeColor: hsla(120, 100%, 90%, 1);
+menu {
+    display: block;
+    >item {
+        display: inline-block;
+        >a {
+            width: 100%;
+            height: 100%;
+            margin: 5px;
+            padding: 10px;
+            background-color: $headerColor;
+            color: hsla(240, 100%, 10%, 1);
+            text-decoration: none;
+            &:hover {
+                background-color: darken($headerColor, 5%);
+            }
+            &.active {
+                background-color: $activeColor;
+            }
+        }
+    }
+}
