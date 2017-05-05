@@ -1,5 +1,6 @@
 'use strict';
 require('./style.scss');
+require('font-awesome/css/font-awesome.css');
 require('angular');
 require('./ors-star/ors-star.js');
 require('./ors-route/ors-route.js');
