@@ -17,9 +17,16 @@
     "angular-ui-router": "1.0.0"
   },
   "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "css-loader": "0.28.1",
     "eslint": "3.19.0",
     "eslint-config-google": "0.7.1",
     "express": "4.15.2",
-    "serve-index": "1.8.0"
+    "extract-text-webpack-plugin": "2.1.0",
+    "ng-annotate-loader": "0.6.0",
+    "serve-index": "1.8.0",
+    "style-loader": "0.17.0",
+    "webpack": "2.5.0"
   }
 }

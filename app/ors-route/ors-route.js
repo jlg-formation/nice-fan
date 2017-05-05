@@ -1,45 +1,44 @@
-(function () {
-	'use strict';
+'use strict';
+require('angular-ui-router');
 
-	var app = angular.module('ors-route', ['ui.router']);
+var app = angular.module('ors-route', ['ui.router']);
 
-	app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
-		$locationProvider.html5Mode(true);
+require('./ProductCtrl.js');
+require('./log.js');
 
-		var homeState = {
-			name: 'home',
-			url: '/',
-			templateUrl: './ors-route/tmpl/home.html'
-		};
+app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
+	$locationProvider.html5Mode(true);
 
-		var productState = {
-			name: 'product',
-			url: '/products',
-			templateUrl: './ors-route/tmpl/product.html',
-			controller: 'ProductCtrl',
-			controllerAs: '$ctrl'
-		};
+	var homeState = {
+		name: 'home',
+		url: '/',
+		templateUrl: './ors-route/tmpl/home.html'
+	};
 
-		var serviceState = {
-			name: 'service',
-			url: '/services',
-			templateUrl: './ors-route/tmpl/service.html'
-		};
+	var productState = {
+		name: 'product',
+		url: '/products',
+		templateUrl: './ors-route/tmpl/product.html',
+		controller: 'ProductCtrl',
+		controllerAs: '$ctrl'
+	};
 
-		var contactState = {
-			name: 'contact',
-			url: '/contact',
-			templateUrl: './ors-route/tmpl/contact.html'
-		};
+	var serviceState = {
+		name: 'service',
+		url: '/services',
+		templateUrl: './ors-route/tmpl/service.html'
+	};
 
-		$stateProvider.state(homeState);
-		$stateProvider.state(productState);
-		$stateProvider.state(serviceState);
-		$stateProvider.state(contactState);
+	var contactState = {
+		name: 'contact',
+		url: '/contact',
+		templateUrl: './ors-route/tmpl/contact.html'
+	};
 
-		$urlRouterProvider.otherwise('/');
-	});
+	$stateProvider.state(homeState);
+	$stateProvider.state(productState);
+	$stateProvider.state(serviceState);
+	$stateProvider.state(contactState);
 
-
-
-})();
+	$urlRouterProvider.otherwise('/');
+});
