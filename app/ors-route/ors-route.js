@@ -15,7 +15,9 @@
 		var productState = {
 			name: 'product',
 			url: '/products',
-			templateUrl: './ors-route/tmpl/product.html'
+			templateUrl: './ors-route/tmpl/product.html',
+			controller: 'ProductCtrl',
+			controllerAs: '$ctrl'
 		};
 
 		var serviceState = {
