@@ -7,7 +7,7 @@
 		'ngInject';
 		var ctrl = this;
 		ctrl.start = function () {
-			console.log('Start', arguments);
+			console.log('Start with Webpack', arguments);
 			log.add('Start');
 			$http.get('/ws/s1').then((response) => {
 				console.log('response', response);
